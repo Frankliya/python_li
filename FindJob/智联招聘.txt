@@ -1,0 +1,54 @@
+url：https://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E5%8C%97%E4%BA%AC&kw=python%E5%BC%80%E5%8F%91&sm=0&p=1&isadv=0
+
+
+
+
+职位详情页链接href：//div[@id="newlist_list_content_table"]/table//div/a[1]/@href
+
+
+# 公司名称
+company_name：  //div[@class="terminalpage-right"]//p/a/text()
+
+
+# 职位名称
+ job_name :    //div[@class="fixed-inner-box"]/div/h1/text()
+
+job_names = response.xpath( ).extrect()
+for names in job_names:
+      job_name = names[0]
+
+
+# 招聘内容及要求
+job_info:    
+
+               //div[@class="tab-cont-box"]/div/p/span/text()  |   //div[@class="tab-cont-box"]/div[1]/p/text()
+	
+
+# 工作地点
+job_site:    //div[@class="tab-cont-box"]/div/h2/text()
+
+# 发布时间
+job_time:    //div[@class="terminalpage-left"]//li[3]/strong/span/text()
+
+# 薪资
+job_pay :     //div[@class="terminalpage-left"]//li[1]/strong/text()
+
+
+
+
+# 工作经验
+work_exp:    //div[@class="terminalpage-left"]//li[5]/strong/text()
+
+# 学历
+work_edu:  //div[@class="terminalpage-left"]//li[6]/strong/text()
+
+
+
+
+
+
+
+
+
+
+

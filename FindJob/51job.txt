@@ -1,0 +1,30 @@
+
+
+职位详情页链接href：  //div[@id="resultList"]//p[1]/span/a/@href
+
+
+# 公司名称
+company_name： //div[@class="in"]/div[1]/p[@class="cname"]/a/text()
+
+
+# 职位名称
+ job_name :  //div[@class="in"]/div[1]/h1/text()
+
+# 招聘内容及要求
+job_info:    //div[@class="bmsg job_msg inbox"]/p/text()
+
+# 工作地点
+job_site:    //div[@class="bmsg inbox"]/p/text()
+
+# 发布时间
+job_time:  //div[@id="resultList"]/div[position()>3]/span[@class="t5"]/text()
+
+# 薪资
+job_pay :   //div[@class="in"]/div[1]/strong/text()
+
+
+# 工作经验
+work_exp:   //div[@class="t1"]/span[1]/text()
+
+# 学历
+work_edu:   //div[@class="t1"]/span[2]/text()
